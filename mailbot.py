@@ -53,6 +53,7 @@ for i in range(0, list_length):
 	m['Subject'] = subject
 	m['From'] = from_address
 	m['To'] = to_address
+	
 	# send the message out
 	server.sendmail(from_address, to_address, m.as_string())
 

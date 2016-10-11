@@ -6,10 +6,7 @@ I developed this script to automate the sending of emails for Tech@NYU's busines
 
 # Example Usage
 
-`python mailbot.py`
+`python mailbot.py example.json`
 
 # To-do
-- Read input files to send emails
-- Take username and password via command line
-- Use variable replacement to easily send many messages
 - Figure out how to log in through NYU email
