@@ -45,6 +45,7 @@ for i in range(0, list_length):
 	message = raw_message
 	subject = raw_subject
 	to_address = variable_dictionary[variable_to][i]
+	sys.stdout.write("Sending email to " + to_address + "... ")
 	for key, values in variable_dictionary.iteritems():
 		message = message.replace(key, values[i])
 		subject = subject.replace(key, values[i])
@@ -56,5 +57,6 @@ for i in range(0, list_length):
 	
 	# send the message out
 	server.sendmail(from_address, to_address, m.as_string())
+	sys.stdout.write("Done!\n")
 
 server.quit()
