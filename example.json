@@ -1,6 +1,6 @@
 {
-    "from": "aneesh@techatnyu.com",
-    "username": "aneesh@techatnyu.com",
+    "name": "Aneesh Ashutosh",
+    "username": "aneesh@example.com",
     "password": "enter_your_password_here",
     "to": "{{EMAIL}}",
     "subject": "This is a test, {{NAME}}!",
@@ -9,43 +9,25 @@
         {
             "var": "{{EMAIL}}",
             "vals": [
-                {
-                    "val": "robert@techatnyu.com"
-                },
-                {
-                    "val": "jennifer@techatnyu.com"
-                },
-                {
-                    "val": "david@techatnyu.com"
-                }
+                { "val": "robert@example.com" },
+                { "val": "jennifer@example.com" },
+                { "val": "david@example.com" }
             ]
         },
         {
             "var": "{{NAME}}",
             "vals": [
-                {
-                    "val": "Robert"
-                },
-                {
-                    "val": "Jennifer"
-                },
-                {
-                    "val": "David"
-                }
+                { "val": "Robert" },
+                { "val": "Jennifer" },
+                { "val": "David" }
             ]
         },
         {
             "var": "{{DAY}}",
             "vals": [
-                {
-                    "val": "Sunday"
-                },
-                {
-                    "val": "Tuesday"
-                },
-                {
-                    "val": "Wednesday"
-                }
+                { "val": "Sunday" },
+                { "val": "Tuesday" },
+                { "val": "Wednesday" }
             ]
         }
     ]
