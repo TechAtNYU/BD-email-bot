@@ -3,6 +3,7 @@
     "username": "aneesh@techatnyu.com",
     "password": "enter_your_password_here",
     "to": "{{EMAIL}}",
+    "subject": "This is a test, {{NAME}}!",
     "message": "Hey {{NAME}}! It's great to meet you! Today is {{DAY}}",
     "variables": [
         {

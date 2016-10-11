@@ -1,6 +1,7 @@
 import smtplib
 import json
 import sys
+from email.mime.text import MIMEText as text
 
 if len(sys.argv) != 2:
 	print("Incorrect number of arguments.")
@@ -18,6 +19,7 @@ from_address = data["from"]
 username = data["username"]
 password = data["password"]
 raw_message = data["message"]
+raw_subject = data["subject"]
 variable_to = data["to"]
 
 # populate the dictionary of variables and replacers
@@ -41,11 +43,17 @@ server.login(username, password)
 # replace variables in the message
 for i in range(0, list_length):
 	message = raw_message
-	to_address = list_vals[variable_to][i]
-	for key, values in list_vals.iteritems():
+	subject = raw_subject
+	to_address = variable_dictionary[variable_to][i]
+	for key, values in variable_dictionary.iteritems():
 		message = message.replace(key, values[i])
+		subject = subject.replace(key, values[i])
 
+	m = text(message)
+	m['Subject'] = subject
+	m['From'] = from_address
+	m['To'] = to_address
 	# send the message out
-	server.sendmail(from_address, to_address, message)
+	server.sendmail(from_address, to_address, m.as_string())
 
 server.quit()
