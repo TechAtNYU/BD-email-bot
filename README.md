@@ -7,15 +7,18 @@ I developed this script to automate the sending of emails for Tech@NYU's busines
 # Installation
 
 `git clone https://github.com/TechAtNYU/BD-email-bot.git`
+
 `cd BD-email-bot`
 
 
 # Example Usage
 
 **To create a json object and save it into example.json**
+
 `python generate-json.py example.json`
 
 **To execute the bot from the contents of example.json**
+
 `python mailbot.py example.json`
 
 # To-do
