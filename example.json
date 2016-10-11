@@ -1,0 +1,51 @@
+{
+    "from": "aneesh@techatnyu.com",
+    "username": "aneesh@techatnyu.com",
+    "password": "enter_your_password_here",
+    "to": "{{EMAIL}}",
+    "message": "Hey {{NAME}}! It's great to meet you! Today is {{DAY}}",
+    "variables": [
+        {
+            "var": "{{EMAIL}}",
+            "vals": [
+                {
+                    "val": "robert@techatnyu.com"
+                },
+                {
+                    "val": "jennifer@techatnyu.com"
+                },
+                {
+                    "val": "david@techatnyu.com"
+                }
+            ]
+        },
+        {
+            "var": "{{NAME}}",
+            "vals": [
+                {
+                    "val": "Robert"
+                },
+                {
+                    "val": "Jennifer"
+                },
+                {
+                    "val": "David"
+                }
+            ]
+        },
+        {
+            "var": "{{DAY}}",
+            "vals": [
+                {
+                    "val": "Sunday"
+                },
+                {
+                    "val": "Tuesday"
+                },
+                {
+                    "val": "Wednesday"
+                }
+            ]
+        }
+    ]
+}
